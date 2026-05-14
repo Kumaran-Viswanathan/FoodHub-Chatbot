@@ -1,0 +1,12 @@
+llm_models:
+  llm_sql:
+    model_name: "llama-3.3-70b-versatile"
+    temperature: 0.00
+  llm_reason:
+    model_name: "llama-3.3-70b-versatile"
+    temperature: 0.00
+  llm_response:
+    model_name: "llama-3.3-70b-versatile"
+    temperature: 0.20
+database:
+  path: "./customer_orders.db"
