@@ -83,7 +83,7 @@ escalation_tool = Tool(name="Human_Agent", func=handle_escalation, description="
 
 # --- Guardrails ---
 def apply_input_guardrail(query):
-    blocked_pattern = r'hacker|unauthorized|access\\s+all|steal|private|confidential|delete|harm|data\\s+security|vulnerability|breach|hacking|admin|root|password'
+    blocked_pattern = r'admin| hacker|unauthorized|access\\s+all|steal|private|confidential|delete|harm|data\\s+security|vulnerability|breach|hacking|admin|root|password'
     if re.search(blocked_pattern, query, re.IGNORECASE):
         return "I cannot assist with inappropriate or unauthorized requests. I am only authorized to assist with specific customer order lookups."
     return None
