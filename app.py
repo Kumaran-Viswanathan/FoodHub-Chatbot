@@ -5,7 +5,7 @@ import os
 # --- Streamlit Page Configuration ---
 st.set_page_config(page_title="FoodHub Chatbot", page_icon=":robot:", layout="centered")
 
-st.title("354 FoodHub Customer Support")
+st.title("FoodHub Customer Support")
 st.markdown("Hello! I am ChefByte, your AI assistant. How can I help you today?")
 
 # Pointing to localhost within the same container
