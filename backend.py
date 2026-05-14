@@ -108,7 +108,7 @@ def apply_output_guardrail(response_text):
     aggregate_keywords = ["total orders", "number of orders", "how many orders", "count of orders", "average order", "sum of orders"]
     for keyword in aggregate_keywords:
         if keyword in response_text.lower():
-            return "I'm sorry, I cannot provide aggregate statistics due to security and privacy policies. I can only provide details for specific orders or customers."
+            return "I'm sorry, I cannot provide aggregate statistics due to security and privacy policies. I can only provide details for specific customer orders"
     return response_text
 
 @app.post("/chat", response_model=ChatResponse)
